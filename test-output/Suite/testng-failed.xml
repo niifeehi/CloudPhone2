@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test name="prodSignUpCloud.java(failed)">
+    <classes>
+      <class name="signUp.deletionCall">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- signUp.deletionCall -->
+      <class name="signUp.prodSignUpCloud">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="afterClass"/>
+          <include name="test2"/>
+        </methods>
+      </class> <!-- signUp.prodSignUpCloud -->
+    </classes>
+  </test> <!-- prodSignUpCloud.java(failed) -->
+</suite> <!-- Failed suite [Suite] -->

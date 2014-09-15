@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  
+  <test name="deletionCall.java">
+    <classes>
+      <class name="signUp.deletionCall"/>
+    </classes>
+  </test>   
+  
+<!--    <test name="deletionCall1.java">
+    <classes>
+      <class name="signUp.deletionCall1"/>
+    </classes>
+  </test>  -->  
+   
+   <test name="prodSignUpCloud.java">
+    <classes>
+      <class name="signUp.prodSignUpCloud"/>
+    </classes>
+  </test> 
+
+<!--    <test name="prodSignUpCloud1.java">
+    <classes>
+      <class name="signUp.prodSignUpCloud1"/>
+    </classes>
+  </test>   -->
+ 
+</suite> 
