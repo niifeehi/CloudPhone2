@@ -31,7 +31,7 @@ private WebDriver driver;
   public void beforeClass(){
 	  
    driver = new FirefoxDriver();
-    baseUrl = "https://cloudphone.voxox.com/";
+    baseUrl = "https://cloudpho.com";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
     }
@@ -42,18 +42,18 @@ private WebDriver driver;
 	     driver.findElement(By.id("signupLink")).click();
 	     new Select(driver.findElement(By.id("countryCode"))).selectByVisibleText("United States (+1)");
 	     driver.findElement(By.id("mobileNumber")).clear();
-	     driver.findElement(By.id("mobileNumber")).sendKeys("8583809176");
+	     driver.findElement(By.id("mobileNumber")).sendKeys("");
 	     driver.findElement(By.cssSelector("button.btn")).click();
 	     driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
 	     
 	     
-	       String dbUrl = "jdbc:mysql://vdb-prod.telcentris.net:3306/acl"; 
-		   String username = "basil.dzewu";
-		   String password = "e(6YAns1Q4qr";
+	       String dbUrl = ""; 
+		   String username = "";
+		   String password = "";
 		   
-		   String query = " Select smsCode from acl.users where login='+8583809176' ";
+		   String query = " Select smsCode from  where login='' ";
 		   
-		   Class.forName("com.mysql.jdbc.Driver");
+		   Class.forName("");
 		   
 		   Connection conn = DriverManager.getConnection(dbUrl, username, password);
 		   
@@ -75,7 +75,7 @@ private WebDriver driver;
 	     driver.manage().timeouts().pageLoadTimeout(2000, TimeUnit.SECONDS);
 	     
 	     driver.findElement(By.cssSelector("button.btn")).click();
-	     driver.findElement(By.linkText("I Dig it! Let’s Move On!")).click();
+	     driver.findElement(By.linkText("I Dig it! Letâ€™s Move On!")).click();
 	     driver.findElement(By.id("firstName")).clear();
 	     driver.findElement(By.id("firstName")).sendKeys("test2");
 	     driver.findElement(By.id("lastName")).clear();
