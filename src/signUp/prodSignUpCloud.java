@@ -38,15 +38,15 @@ public class prodSignUpCloud {
 	   public void test2 () throws ClassNotFoundException, SQLException, InterruptedException {
 		  
 		  driver = new FirefoxDriver();
-		    baseUrl = "https://cloudphone.voxox.com/";
+		    baseUrl = "https://cloudne.com";
 		   driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 		  
 		  
 	     driver.get(baseUrl + "/vxlogin");
 	     driver.findElement(By.id("signupLink")).click();
-	     new Select(driver.findElement(By.id("countryCode"))).selectByVisibleText("United States (+1)");
+	     new Select(driver.findElement(By.id("countryCode"))).selectByVisibleText("U");
 	     driver.findElement(By.id("mobileNumber")).clear();
-	     driver.findElement(By.id("mobileNumber")).sendKeys("8583809176");
+	     driver.findElement(By.id("mobileNumber")).sendKeys("");
 	     driver.findElement(By.cssSelector("button.btn")).click();
 	     driver.manage().timeouts().pageLoadTimeout(300, TimeUnit.SECONDS);
 	     
