@@ -32,29 +32,6 @@ public class prodSignUpCloud {
  	  
     }
 
-  		/*@Test
-  		public void test1 () throws ClassNotFoundException, SQLException, InterruptedException {
-    
-    
-  	   String dbUrl = "jdbc:mysql://vdb-lab.telcentris.net:3306/acl"; 
-	   String username = "basil.dzewu";
-	   String password = "e(6YAns1Q4qr";
-	   
-	   String query = "Delete from acl.users where login='+18583809176'";
-	   
-	   Class.forName("com.mysql.jdbc.Driver");
-	   
-	   Connection conn = DriverManager.getConnection(dbUrl, username, password);
-	   
-	   Statement stmt = conn.createStatement();
-	   
-	   stmt.executeUpdate(query);
-	
-	   
-	    stmt.close() ;
-	    conn.close() ;
-	    
-  		} */
   		
      
 	  @Test
@@ -75,13 +52,13 @@ public class prodSignUpCloud {
 	     
 	     Thread.sleep(3000);
 	     
-	       String dbUrl = "jdbc:mysql://vdb-warehouse.telcentris.net:3306/acl"; 
-		   String username = "basil.dzewu";
-		   String password = "lHcYZ~)jw9";
+	       String dbUrl = ""; 
+		   String username = "";
+		   String password = "";
 		   
-		   String query1 = " Select smsCode from acl.users where login='+18583809176' ";
+		   String query1 = " ";
 		   
-		   Class.forName("com.mysql.jdbc.Driver");
+		   Class.forName("");
 		   
 		   Connection conn = DriverManager.getConnection(dbUrl, username, password);
 		   
@@ -110,28 +87,28 @@ public class prodSignUpCloud {
 	     
 	     driver.findElement(By.cssSelector("button.btn")).click();
 	     driver.manage().timeouts().pageLoadTimeout(2000, TimeUnit.SECONDS);
-	     driver.findElement(By.linkText("I Dig it! Let’s Move On!")).click();
+	     driver.findElement(By.linkText("I Dig it! Letâ€™s Move On!")).click();
 	     
 	     // incase request is made for CC info to be provided.
 	     
-	    new Select(driver.findElement(By.id("ccType"))).selectByVisibleText("VISA");
+	    new Select(driver.findElement(By.id("ccType"))).selectByVisibleText("");
 	     driver.findElement(By.id("ccNumber")).clear();
-	     driver.findElement(By.id("ccNumber")).sendKeys("4815880006441135");
+	     driver.findElement(By.id("ccNumber")).sendKeys("");
 	     driver.findElement(By.id("ccCVV")).clear();
-	     driver.findElement(By.id("ccCVV")).sendKeys("822");
+	     driver.findElement(By.id("ccCVV")).sendKeys("");
 	     
-	     new Select(driver.findElement(By.id("ccExpMonth"))).selectByVisibleText("Dec");
-	     new Select(driver.findElement(By.id("ccExpYear"))).selectByVisibleText("2017");
+	     new Select(driver.findElement(By.id("ccExpMonth"))).selectByVisibleText("");
+	     new Select(driver.findElement(By.id("ccExpYear"))).selectByVisibleText("");
 	     driver.findElement(By.id("ccName")).clear();
 	     driver.findElement(By.id("ccName")).sendKeys("Test QA");
 	     driver.findElement(By.id("billingAddress")).clear();
 	   
-	     driver.findElement(By.id("billingAddress")).sendKeys("9276 Scranton Road Suite 300");
+	     driver.findElement(By.id("billingAddress")).sendKeys("");
 	     driver.findElement(By.id("billingCity")).clear();
-	     driver.findElement(By.id("billingCity")).sendKeys("San Diego");
+	     driver.findElement(By.id("billingCity")).sendKeys("");
 	     new Select(driver.findElement(By.id("billingState"))).selectByVisibleText("CA");
 	     driver.findElement(By.id("billingZip")).clear();
-	     driver.findElement(By.id("billingZip")).sendKeys("92121");
+	     driver.findElement(By.id("billingZip")).sendKeys("");
 	     driver.findElement(By.id("submitBilling")).click();
 	     
 	     
